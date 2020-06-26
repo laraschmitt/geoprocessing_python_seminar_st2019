@@ -43,7 +43,7 @@ def CS_Transform(geom, LYRto):
 
 # ####################################### FOLDER PATHS & global variables ##################################### #
 # Folder containing the working data
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment09/Assignment09_data/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 # ####################################### LOAD DATA  ######################################################### #
