@@ -17,7 +17,7 @@ print("")
 
 # ####################################### FOLDER PATHS & global variables ##################################### #
 # Folder containing the working data
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment06/data/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 # os.chdir(path)
 
 #####################################PRE-PROCESSING SHAPEFILE ##############################################
@@ -98,8 +98,8 @@ for field in ds.schema:
 
 ##############################CREATE PROTECTED AREA SUMMARY ##############################################
 
-prot = ogr.Open(path + 'gadm36_dissolve.shp', 0)  # 0 = read-only
-countries = ogr.Open(path + 'gadm36_dissolve.shp', 0)
+prot = ogr.Open(path + '<FILENAME.shp>', 0)  # 0 = read-only
+countries = ogr.Open(path + '<FILENAME.shp>', 0)
 
 # define final dataframe for collecting results and later export
 df = pd.DataFrame(columns={'Country_ID': [],
@@ -185,7 +185,7 @@ for c in countries.GetLayer(0):
     #if i == 5:
     #    break
 
-df.to_csv("E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment06/df_output_sig.csv", index=False, float_format='%.2f', encoding='utf-8-sig')
+df.to_csv("'<PATH_TO_YOUR_OUTPUT_CSV_FILE>'", index=False, float_format='%.2f', encoding='utf-8-sig')
 
 
 
