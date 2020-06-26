@@ -7,10 +7,10 @@ from shapely.geometry import Point, Polygon # datatypes used from shapely packag
 from geopandas import GeoDataFrame # needed to create a geopandas dataframe
 import geopandas
 
-# import table with the land cover and land use data
-LC_path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment02/DE_2015_20180724.csv"
-# import the grid table containing the sampling locations
-grid_path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment02/GRID_CSVEXP_20171113.csv"
+# import csv with the land cover and land use data
+LC_path = '<PATH_TO_YOUR_DATA_FOLDER>'
+# import the csv grid table containing the sampling locations
+grid_path = '<PATH_TO_YOUR_DATA_FOLDER>'
 # fname = os.path.join(path, *path)
 
 # read cs
@@ -121,7 +121,7 @@ geo_df.to_file(driver='ESRI Shapefile', filename='lucas_de.shp')
 # from selected scene boundaries.
 
 # load metadata
-metadata_path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment02/LANDSAT_8_C1_313804.csv"
+metadata_path = '<PATH_TO_YOUR_DATA_FOLDER>'
 metadata = pd.read_csv(metadata_path)
 # print(metadata)
 
