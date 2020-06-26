@@ -35,14 +35,14 @@ warnings.filterwarnings('ignore')
 
 # ########################### DEFINE INPUT DATA FOLDER PATH ##################################################### #
 
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/MAP/MAP_data/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 # ########################### DEFINE OUTPUT FOLDER ############################################################# #
 
 # create a new subfolder called "output"
 
-newpath = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/MAP/MAP_data/output"
+newpath = '<PATH_TO_YOUR_DATA_FOLDER>'
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 
