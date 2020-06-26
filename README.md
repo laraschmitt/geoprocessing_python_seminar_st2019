@@ -36,12 +36,12 @@ This repository includes my assignments from the introductory course in **Geproc
     * manipulate shapefile
     * summary statistics in pandas Dataframe
     
-* ### Lab 7: Create summary statistics of a shapefile
+* ### Lab 7: Creating summary statistics of a shapefile
     * OGR Module 
     * fill pandas Dataframe with calculated statistics
     * export Dataframe to csv
 
-* ### Lab 8: Reprojection shapefile layers
+* ### Lab 8: Reprojecting shapefile layers
     * function to reproject shapefile layers
     * CoordinateTransformation function 
     * function to clip a GeoTiff whith a shapefile 
