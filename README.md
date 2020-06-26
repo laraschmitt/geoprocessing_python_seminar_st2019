@@ -25,12 +25,20 @@ This repository includes assignments from the introductory course in **Geprocess
      * Numpy 3D-array 
      * calculating statistics (of numpy array)
  
-* ### Lab 4: 
-     * 
-
-* ### Lab 5: 
-    * 
-    * 
+* ### Lab 4: Functions for remote sensing image processing
+     * function to mask clouds
+     * function to calculate a mean composite
+     * function to calculate max NDVI composite
+     * export numpy array to raster geotif using rasterio module
+     
+* ### Lab 5: Matplotlib module
+    * calculate change magnitude with numpy.diff
+    * plot change map with matplotlib module
+    * plot histogram 
+    
+* ### Lab 6: Manipulating shapefiles
+    * manipulate shapefile
+    * summary statistics in pandas Dataframe
     
 * ### Lab 7: Create summary statistics of a shapefile
     * OGR Module 
@@ -49,34 +57,24 @@ This repository includes assignments from the introductory course in **Geprocess
     
 * ### Lab 9: Defining random points functions and generate shapefile
     GLM for two more data types/ data generating processes: 
-    * function to create random points lying on the Landsat grid within a geometry
-    * generate polygon shapefile 
-    * write KML file 
+    * random stratified sample
+    * polygon as spatial filter
+    * convert from map to pixel coordinates
+    * extract band values from geotif
     
   
-* ### Lab 10: Statistics in R - 6:
-    * model checking using simulations 
+* ### Final assignment: Clasification model with skicit-learn
+    * function to transform array position into x, y - coordinates
+    * function to create mean from array
+    * function to export array to geotiff
+    * reproject Landsat file to a different coordinate system 
+    * stratified random sample within certain extent
+    * join image tiles 
+    * generate training dataset
+    * standardize training data
+    * grid search and cross validation
+    * train classification model 
 
-* ### Lab 11: Statistics in R - 7:
-    * cluster analysis (kmeans and hierarchical)
-    * reading raster files
-    * pricipal component analysis 
+
     
-* ### Lab 13: Introduction to R - 4:
-    * spatial data in R 
-    
-* ### Lab 14: Spatial statistics in R - 1
-    * descriptive point pattern analysis
-    * kernel density maps
-    * polygon extraction
- 
- * ### Lab 15: Spatial statistics in R - 2 
-     * semivariogram
-     * kriging
-     * neighborhood definitions
-     * moran's I 
-   
- * ### Lab 16: Spatial statistics in R - 3
-     * detecting spatial auto-correlation in regression models
-     * spatial lad models
-     * spatial error models 
+
