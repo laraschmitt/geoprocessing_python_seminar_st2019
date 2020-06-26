@@ -1,11 +1,7 @@
-
-
-
-
 # Seminar Geoprocessing in Python
 ### Institute of Geography, HU Berlin, Summer Term 2019
 
-This repository includes assignments from the introductory course in **Geprocessing in Python_** from the Institute of Geography of the Humboldt University Berlin.
+This repository includes my assignments from the introductory course in **Geprocessing in Python** from the Institute of Geography at Humboldt University Berlin.
 
 * ### Lab 1: Basic Python Scripting
      * OS Module: provides a way of using operating system dependent functionality
@@ -50,19 +46,6 @@ This repository includes assignments from the introductory course in **Geprocess
     * CoordinateTransformation function 
     * function to clip a GeoTiff whith a shapefile 
  
-* ### Lab 8: Statistics in R - 4
-    * from LM to GLM
-    * the GLM in R 
-    * simulating data for assessing model fits
-    
-* ### Lab 9: Defining random points functions and generate shapefile
-    GLM for two more data types/ data generating processes: 
-    * random stratified sample
-    * polygon as spatial filter
-    * convert from map to pixel coordinates
-    * extract band values from geotif
-    
-  
 * ### Final assignment: Clasification model with skicit-learn
     * function to transform array position into x, y - coordinates
     * function to create mean from array
@@ -74,7 +57,3 @@ This repository includes assignments from the introductory course in **Geprocess
     * standardize training data
     * grid search and cross validation
     * train classification model 
-
-
-    
-
