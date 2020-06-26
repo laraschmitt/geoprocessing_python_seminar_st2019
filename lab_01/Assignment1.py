@@ -18,8 +18,8 @@ import re # re = regular expression operations
 # '^' (caret.) matches the start of the string
 # '$' matches the end of the string
 
-## define path
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment01_data/Part01_Landsat"
+## define path to local folder
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 
 ####################################### PART 1.1  ########################################################
 ## The Landsat sensor family has now overall four satellites (L4, L5, L7, L8), and for each of the four 
@@ -142,7 +142,7 @@ print("In sum",missings,"scenes are incomplete")
 # raster-files). Once you have your results, please upload them for both layer types (vector and raster) 
 # into moodle under question 4.
 
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment01_data/Part02_GIS-Files"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 
 raster_len = len([file for file in os.listdir(path)
                if file.endswith('.tif') and os.path.isfile(os.path.join(path, file))])
