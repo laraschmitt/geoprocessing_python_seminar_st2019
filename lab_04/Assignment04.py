@@ -3,7 +3,7 @@ import rasterio as rio
 import gdal
 import os
 
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment04/landsat8_2015"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 
 os.chdir(path)  # change directory to path
 
@@ -103,7 +103,7 @@ ras_meta['dtype'] = "float64"
 # 'crs': CRS.from_dict(init='epsg:32633'),
 # 'transform': Affine(30.0, 0.0, 364335.0, 0.0, -30.0, 5830485.0), 'tiled': False, 'interleave': 'pixel'}
 
-with rio.open('E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment04/mean_output.tif', 'w', **ras_meta) as dst:
+with rio.open('<PATH_TO_YOUR_TIFF_FILE>', 'w', **ras_meta) as dst:
     dst.write(arr_stack_mean)
 
 
@@ -154,5 +154,5 @@ ras_meta['count'] = 1
 # add dimension to output
 arr_stack_ndvi_3d = np.expand_dims(arr_stack_ndvi, axis=0)
 
-with rio.open('E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment04/ndvi_output.tif', 'w', **ras_meta) as dst:
+with rio.open('<PATH_TO_YOUR_TIFF_FILE>', 'w', **ras_meta) as dst:
     dst.write(arr_stack_ndvi_3d)
