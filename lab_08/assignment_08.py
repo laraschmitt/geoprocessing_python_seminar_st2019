@@ -127,7 +127,7 @@ def clip_geotiff(shapefile_path, raster_path):
 
 # ####################################### FOLDER PATHS & global variables ##################################### #
 # Folder containing the working data
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment08/Assignment08_data2/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 # ##################### REPROJECT LAYERS ###################################################################### #
