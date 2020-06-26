@@ -4,7 +4,7 @@ import numpy as np
 from shapely.geometry import box
 from functools import reduce
 
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment03/Assignment03_Files/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path) # change directory to path
 
 # GDAL open raster files and store in list
