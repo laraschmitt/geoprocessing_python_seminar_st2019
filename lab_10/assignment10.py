@@ -23,7 +23,7 @@ print("")
 
 # ####################################### FOLDER PATHS & global variables ##################################### #
 # Folder containing the working data
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment10/Assignment10_data/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 # ####################################### LOAD DATA  ######################################################### #
@@ -77,10 +77,7 @@ Xtrain, Xtest, ytrain, ytest = train_test_split(X_scaled, y, test_size=0.5,rando
 # and determine the best model
 # Define the grid search for C= [1, 5, 10, 50, 100, 1000] and Gamma = [0.0001, 0.0005, 0.001, 0.005].
 
-
-
 # Report the overall accuracy and the class-wise accuracies(recall and precision).
-
 
 # create an instance of the classifier
 from sklearn.svm import SVC
