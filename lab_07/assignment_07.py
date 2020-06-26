@@ -76,7 +76,7 @@ def create_grid_coord(x_center, y_center):
 
 # ####################################### FOLDER PATHS & global variables ##################################### #
 # Folder containing the working data
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment07/data/"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 # ####################################### LOADING data ######################################################## #
