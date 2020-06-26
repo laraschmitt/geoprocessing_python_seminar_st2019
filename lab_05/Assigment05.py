@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt # import pyplot module from matplot library
 import rasterio as rio
 
 
-path = "E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment05/data"
+path = '<PATH_TO_YOUR_DATA_FOLDER>'
 os.chdir(path)
 
 files = []
@@ -105,7 +105,7 @@ ras_meta['dtype'] = 'int32'
 # 'crs': CRS.from_dict(init='epsg:32633'),
 # 'transform': Affine(30.0, 0.0, 487905.0, 0.0, -30.0, 5762925.0), 'tiled': False, 'interleave': 'pixel'}
 
-with rio.open('E:/STUDIUM_Global_Change_Geography/M8_Geoprocessing/Assignment05/disturbance_years_output.tif', 'w', **ras_meta) as dst:
+with rio.open('<PATH_TO_YOUR_TIFF_FILE>', 'w', **ras_meta) as dst:
     dst.write(masked_valid_mag_valid_forest_arr)
 
 
